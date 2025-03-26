@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26_03</title>
+    <style>
+        h1{
+            color: rgb(14, 65, 65);
+        }
+        body{
+            background-color: rgb(144, 184, 184);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mensagem</h1>
+    <p>Testando mensagem!</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt("Escolha um número"))
+        var n2 = Number.parseInt(window.prompt("Escolha outro número"))
+        var soma = n1 + n2
+        soma = soma.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+        
+        window.alert(`A soma dos numeros é ${soma}`)
+    </script>
+</body>
+</html>
