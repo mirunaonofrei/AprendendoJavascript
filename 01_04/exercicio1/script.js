@@ -6,12 +6,18 @@ function contar(){
 
     contagem.innerHTML = `${num_inicio} -> `
     num_inicio = num_inicio + passo
-
+    for(num_inicio;num_inicio<num_fim;num_inicio=num_inicio+passo){
+        var aux = document.createTextNode(`${num_inicio}  -> `)
+        contagem.appendChild(aux)
+    }
+    
+    /*
     while (num_inicio < num_fim) {
         var aux = document.createTextNode(`${num_inicio}  -> `)
         contagem.appendChild(aux)
         num_inicio = num_inicio + passo
     }
+     */
     
     var aux2 = document.createTextNode(`FIM`)
     contagem.appendChild(aux2)
